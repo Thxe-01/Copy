@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Sriracha", cursive;
+    font-weight: 400;
+    font-style: normal;
+    /* border: 1px solid black; */
+}
+
+@media only screen and (max-width: 500px) {
+    body {
+        background-position: left bottom !important;
+    }
+
+    .container {
+        padding: 0 2rem !important;
+    }
+
+    .menu_bar {
+        width: 100% !important;
+        height: 60px !important;
+        padding: 0 1rem !important;
+    }
+
+    .icon {
+        width: 8% !important;
+    }
+
+    .menu_bar > h1 {
+        font-size: 20px !important;
+    }
+
+    .costume1 {
+        width: 250px !important;
+        height: 250px !important;
+    }
+
+    .footer {
+        width: 100% !important;
+        height: 45px !important;
+    }
+
+    .footer > h1 {
+        font-size: 16px !important;
+    }
+
+    .popup {
+        width: 70% !important;
+        height: 70% !important;
+        top: 6rem !important;
+    }
+
+    .popup > h1 {
+        font-size: 32px !important;
+    }
+
+    .menu_list {
+        height: 13% !important;
+        font-size: 20px !important;
+    }
+
+    .close {
+        font-size: 18px !important;
+    }
+}
+
+body {
+    background: url(background-1.jpeg) no-repeat bottom;
+    background-size: cover;
+}
+
+.container {
+    width: 100dvw;
+    height: 100dvh;
+    text-align: center;
+    padding: 0 5rem;
+    overflow-y: auto;
+    position: relative;
+}
+
+.inner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu_bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 60px;
+    border-radius: 50px;
+    margin: 1rem 0 0 0;
+    padding: 0 2rem;
+    border: black 4px solid;
+    background-color: azure;
+    box-shadow: 6px 6px 5px black;
+}
+
+.menu_bar > h1 {
+    text-shadow: 3px 3px 1px greenyellow;
+}
+
+.icon {
+    margin: 0.5rem 0;
+    width: 4%;
+    height: auto;
+    cursor: pointer;
+}
+
+.menu_bar > h1 {
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+#score {
+    font-size: 34px;
+    text-shadow: 2px 2px 3px rgb(235, 78, 177);
+}
+
+.costume1 {
+    width: 350px;
+    height: 350px;
+    cursor: pointer;
+}
+
+.footer {
+    width: 80%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 1rem 0;
+    padding: 0 2rem;
+    border: black 4px solid;
+    background-color: bisque;
+    box-shadow: 6px 6px 5px black;
+}
+
+.footer > h1 {
+    font-size: 24px;
+    text-shadow: 3px 3px 2px rgb(255, 76, 76);
+}
+
+.popup {
+    width: 30%;
+    height: 80%;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    border:  black 5px solid;
+    background-color: aqua;
+    box-shadow: 6px 6px 5px black;
+    position: absolute;
+    padding: 0.25rem 0 1rem 0;
+    top: 5rem;
+    z-index: 99;
+}
+
+.popup > h1 {
+    font-size: 40px;
+    text-shadow: 3px 3px 2px rgb(76, 160, 255);
+}
+
+.menu_list {
+    width: 60%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    border: rgb(0, 145, 106) 3px solid;
+    border-radius: 5px;
+    background-color: rgb(57, 208, 95);
+    font-size: 24px;
+    text-shadow: 3px 3px 2px rgb(21, 147, 11);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.menu_list:hover {
+    background-color: rgb(46, 211, 34);
+}
+
+.close {
+    width: 80%;
+    height: 9%;
+    font-size: 24px;
+    text-shadow: 3px 3px 2px khaki;
+    background-color: rgb(255, 151, 203);
+    box-shadow: 6px 6px 5px deeppink;
+    border: darkmagenta 3px solid;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.close:hover {
+    background-color: rgb(244, 113, 179);
+}
+
+.backdrop {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.5);
+    position: absolute;
+}

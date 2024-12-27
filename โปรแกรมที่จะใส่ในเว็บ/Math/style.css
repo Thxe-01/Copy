@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Itim", cursive;
+    font-weight: 1000;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+
+body {
+    background: linear-gradient(135deg, #43cea2, #185a9d);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container {
+    width: 100%;
+    height: 100dvh;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.container > h1 {
+    text-decoration: underline double;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #201d1d;
+    text-align: center;
+}
+
+
+.screen {
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    background: url('background.jpg') no-repeat center;
+    background-size: cover;
+    margin: 1rem 0;
+}
+
+#score_txt {
+    color: white;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    font-size: 1.5rem;
+}
+
+#subject {
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+}
+
+#alert {
+    color: white;
+    position: absolute;
+    bottom: 1rem;
+    font-size: 1rem;
+}
+
+
+.input_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    padding: 0.5rem;
+    background: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.txt {
+    width: 35%;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+#input {
+    width: 65%;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 0.5rem;
+    border: 2px solid #333;
+    border-radius: 5px;
+}
+
+
+#input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+
+@media (max-width: 768px) {
+    .screen {
+        height: 300px;
+    }
+
+    #score_txt {
+        font-size: 1.2rem;
+    }
+
+    #subject {
+        font-size: 1.5rem;
+    }
+
+    #alert {
+        font-size: 0.9rem;
+    }
+
+    .input_box {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .txt {
+        width: 100%;
+        margin-bottom: 0.5rem;
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    #input {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .container > h1 {
+        font-size: 1.5rem;
+    }
+
+    .screen {
+        height: 250px;
+    }
+
+    #subject {
+        font-size: 1.2rem;
+    }
+
+    #score_txt {
+        font-size: 1rem;
+    }
+
+    #alert {
+        font-size: 0.8rem;
+    }
+
+    .input_box > input {
+        font-size: 1rem;
+    }
+
+    .txt {
+        font-size: 0.9rem;
+    }
+}

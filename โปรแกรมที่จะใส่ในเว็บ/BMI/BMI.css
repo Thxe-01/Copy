@@ -1,0 +1,107 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  /* border: #000 solid 3px; */
+}
+
+.bmi_box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100dvw;
+  height: 100dvh;
+}
+
+.bmi_main{
+  /* margin: 10rem; */
+  border: #000 solid 3px;
+  width: 60%;
+  box-shadow: 5px 5px 20px #7e7070;
+}
+
+.header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 3px black solid; */
+  background: #0CCB2B;
+}
+
+/* .head{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.Content{
+  background: #A7ECB2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weight{
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+
+.height{
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+
+.submit{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.submit > input {
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 10px;
+  width: 40%;
+  height: 40px;
+  background: #BEBEBE;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.results{
+  text-align: center;
+  margin: 1.5rem;
+  font-size: 40px;
+}
+
+.box{
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  margin-top: 0.5rem;
+  width: 100%;
+  height: 40px;
+  border:none;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 30px;
+  background: #C7C3C3;
+}
+
+.footer{
+  /* border: black solid 3px; */
+  background: #12D288;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 20dvh;
+}
+
+.total{
+  margin: 0.7rem;
+}
+
+.results{
+  margin-top: 0;
+  margin-bottom: 0.7rem ;
+}

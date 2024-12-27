@@ -1,0 +1,83 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Itim", cursive;
+  font-weight: 1000;
+  font-style: normal;
+  border: 1px solid black;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+h1 {
+  margin: 1rem;
+}
+
+.game_container{
+  width: 100dvw;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.game_board{
+  margin: 0.5rem;
+  display: grid;
+  grid-template-columns: repeat(8,75px);
+  grid-template-rows: repeat(8,75px);
+}
+
+.pawn{
+    width: 70%;
+    height: 70%;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.black_p{
+  background-color: wheat;
+  border: rgb(134, 96, 60) solid 2px;
+}
+
+.white_p{
+  background-color: rgb(255, 255, 255);
+  border: rgb(0, 0, 0) solid 2px;
+}
+
+/* .king{
+    width: 80%;
+    height: 80%;
+    border: black 2px solid;
+    border-radius: 100%;
+    display: none;
+} */
+
+.cell{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.black_cell{
+  background-color: rgb(161, 161, 161);
+}
+
+.white_cell{
+  background-color: white;
+}
+
+h2{
+  font-size: 30px;
+}
+
+.reset_btn{
+  width: 20%;
+  height: 45px;
+  margin-top: 1rem;
+}

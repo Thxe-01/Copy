@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar_Project</title>
+    <link rel="icon" href="Logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Pattaya&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Itim&family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Pattaya&family=Sriracha&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebox">
+            <button class="btn" id="back"><</button>
+        </div>
+        <div class="inner_container">
+            <div class="head">
+                <h4 id="date_now"></h4>
+            </div>
+            <div class="calendar_box">
+                <h1 id="year"></h1>
+                <h2 id="month"></h2>
+                <div id="weekday"></div>
+                <div id="date"></div>
+            </div>
+        </div>
+        <div class="sidebox">
+            <button class="btn" id="next">></button>    
+        </div>
+        <div class="event" id="event">
+            <h1 class="addevent">Add Events Here</h1>
+            <div class="input_box">
+                <input id="input_event" class="input" type="text" placeholder="Event Title">
+                <div class="save_text">
+                    <button class="text_btn" id="save">Save</button>
+                    <button class="text_btn" id="cancel">Cancel</button>
+                </div>
+            </div>
+        </div>
+        <div class="event" id="delete_event">
+            <h1 class="addevent">Your Event</h1>
+            
+            <p class="detail" id="event_detail"></p>
+            <div class="save_text">
+                <button class="text_btn" id="delete">Delete</button>
+                <button class="text_btn" id="close">Close</button>
+            </div>
+        </div>
+        <div class="backdrop" id="backdrop"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
